@@ -9,11 +9,11 @@ public class App
     public static void main( String[] args )
     {
        
-    	CONCategorieUsageBienEnum conCategorieUsageBienEnum = CONCategorieUsageBienEnum.PAS_DAB;
-    	String name = conCategorieUsageBienEnum.name();
-    	System.out.println("Categorie : " + conCategorieUsageBienEnum + " [" + conCategorieUsageBienEnum.name() + "]") ;
-    	System.out.println("Categorie : " + conCategorieUsageBienEnum + " [" + conCategorieUsageBienEnum.getLibelle() + "]") ;
-    	System.out.println("Categorie : " + conCategorieUsageBienEnum + " [" + conCategorieUsageBienEnum.getCodeREGIS() + "]") ;
+    	AmxCategorie amxCategorie = AmxCategorie.TEST;
+    	String name = amxCategorie.name();
+    	System.out.println("Categorie : " + amxCategorie + " [" + amxCategorie.name() + "]") ;
+    	System.out.println("Categorie : " + amxCategorie + " [" + amxCategorie.getLibelle() + "]") ;
+    	System.out.println("Categorie : " + amxCategorie + " [" + amxCategorie.getCodeAmx1() + "]") ;
      	System.out.println( "END TEST" );
     }
 }
