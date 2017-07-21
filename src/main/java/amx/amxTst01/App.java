@@ -14,6 +14,7 @@ public class App
     	System.out.println("Categorie : " + amxCategorie + " [" + amxCategorie.name() + "]") ;
     	System.out.println("Categorie : " + amxCategorie + " [" + amxCategorie.getLibelle() + "]") ;
     	System.out.println("Categorie : " + amxCategorie + " [" + amxCategorie.getCodeAmx1() + "]") ;
+    	
      	System.out.println( "END TEST" );
     }
 }
