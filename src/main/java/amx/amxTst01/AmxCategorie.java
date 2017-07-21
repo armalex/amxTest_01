@@ -4,7 +4,7 @@ package amx.amxTst01;
 public enum AmxCategorie {
     TEST("000", "AUTRE", "Autre"),
     TEST1("000", "AUTRE", "Autre"),
-    BIENS_EXT("913", "BIENS_EXT", "Biens extérieurs");
+    BIENS_EXT("111", "NIMPORTE", "NIMPORTE");
 
     /**
      * Code REGIS.
