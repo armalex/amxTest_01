@@ -4,7 +4,7 @@ package amx.amxTst01;
 public enum AmxCategorie {
     TEST("000", "AUTRE", "Autre"),
     TEST1("000", "AUTRE", "Autre"),
-    BIENS_EXT("111", "NIMPORTE", "NIMPORTE");
+    BIENS_EXT("codeAmx1", "codeAmx2", "codeAmx3");
 
     /**
      * Code REGIS.
@@ -19,7 +19,7 @@ public enum AmxCategorie {
     /**
      * Libellé.
      */
-    private String libelle;
+    private String codeAmx3;
 
     /**
      * Construction de l'occurence.
@@ -27,14 +27,14 @@ public enum AmxCategorie {
      * @param libelle
      * @param code
      */
-    private AmxCategorie(String codeREGIS, String codePROSPER, String libelle) {
-        this.libelle = libelle;
+    private AmxCategorie(String codeAmx1, String codeAmx2, String codeAmx3) {
+        this.codeAmx3 = codeAmx3;
         this.codeAmx1 = codeAmx1;
-        this.codeAmx1 = codeAmx2;
+        this.codeAmx2 = codeAmx2;
     }
 
-    public String getLibelle() {
-        return libelle;
+    public String getCodeAmx3() {
+        return codeAmx3;
     }
 
     public String getCodeAmx1() {
@@ -45,12 +45,12 @@ public enum AmxCategorie {
         return codeAmx2;
     }
 
-    @Override
-    public String toString() {
-        return this.getLibelle();
-    }
+//    @Override
+//    public String toString() {
+//        return this.getEnumByCodeAmx3();
+//    }
 
-    public static AmxCategorie getEnumByCodeREGIS(String code) {
+    public static AmxCategorie getEnumByCodeAmx1(String code) {
         for(AmxCategorie value : AmxCategorie.values()) {
             if(value.getCodeAmx1().equals(code)) {
                 return value;
@@ -60,7 +60,7 @@ public enum AmxCategorie {
         return null;
     }
 
-    public static AmxCategorie getEnumByCodePROSPER(String code) {
+    public static AmxCategorie getEnumByCodeAmx2(String code) {
         for(AmxCategorie value : AmxCategorie.values()) {
             if(value.getCodeAmx2().equals(code)) {
                 return value;
@@ -70,9 +70,9 @@ public enum AmxCategorie {
         return null;
     }
 
-    public static AmxCategorie getEnum(String chaine) {
+    public static AmxCategorie getEnumByCodeAmx3(String code) {
         for(AmxCategorie valeur : AmxCategorie.values()) {
-            if(valeur.getLibelle().equals(chaine)) {
+            if(valeur.getCodeAmx3().equals(code)) {
                 return valeur;
             }
         }
